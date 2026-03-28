@@ -19,3 +19,16 @@ Commands practised:
 - `mkdir mylab` - created a new directory
 - `touch mylab/text.txt` - created an empty file
 - `man ls` - viewed manual page for ls command
+
+## Lab 1b - Linux Services
+- Discovered SSH was not installed, installed it with `sudo apt install openssh-server -y`
+- Started, stopped and checked status using `sudo systemctl start|stop|status ssh`
+
+## Lab 1b - Linux Permissions
+- Viewed permissions with `ls -l`
+- Changed permissions with `chmod 755 mylab/text.txt` (changed from rw-rw-r-- to rwxr-xr-x)
+- Changed ownership with `chown ltc:ltc mylab/text.txt`
+
+## Lab 1b - Searching Filesystems
+- Used `find /home -name "text.txt"` to locate files by name
+- Used `grep -r "ISEA" /home/ltc/` to search file contents recursively
