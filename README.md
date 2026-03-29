@@ -75,6 +75,7 @@ Murdoch ID: 35614306
 - Created 3-year cumulative cost projection
 - Analysed break-even point and cost per page
 - Tool used: Microsoft Excel
+
 ## Lab 2b - Cloud Computing (Microsoft Azure)
 - Attempted AWS EC2 but encountered account restrictions on new account
 - Successfully deployed Ubuntu VM on Microsoft Azure for Students
@@ -90,3 +91,20 @@ Murdoch ID: 35614306
 - Created `loops.sh` with if statement and for loop
 - Made scripts executable with `chmod +x`
 - Ran scripts with `bash scriptname.sh`
+
+## Lab 3a - DNS Configuration
+- Registered free subdomain: `isealab.mooo.com` via FreeDNS (freedns.afraid.org)
+- Created A record pointing `isealab.mooo.com` → `20.244.8.195`
+- Opened port 443 (HTTPS) on Azure VM firewall
+- Verified DNS propagation using `nslookup isealab.mooo.com` → confirmed IP 20.244.8.195
+- Installed Apache2 web server on Azure VM
+- Confirmed Apache welcome page loading at `http://isealab.mooo.com`
+
+## Lab 3a - SSL Certificate (Let's Encrypt)
+- Installed Certbot via snap on Azure VM
+- Ran `sudo certbot --apache` for domain `isealab.mooo.com`
+- Certificate successfully issued by Let's Encrypt
+- HTTPS enabled at `https://isealab.mooo.com`
+- Verified lock icon in browser showing Let's Encrypt as issuer
+- Certificate valid from 29 March 2026 to 27 June 2026
+- Tested auto-renewal with `sudo certbot renew --dry-run` - all renewals succeeded
