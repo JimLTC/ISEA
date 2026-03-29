@@ -120,3 +120,15 @@ Murdoch ID: 35614306
 - Scheduled with cron: `0 * * * * isealab /usr/bin/testscript` (runs every hour)
 - Challenge 1: Added `@reboot /usr/bin/testscript` to run at boot
 - Challenge 2: Installed figlet and neofetch for system info display
+
+## Lab 4a - Additional Server Service (MySQL)
+- Chose MySQL as the additional server service
+- Installed MySQL: `sudo apt install mysql-server -y`
+- Verified MySQL running: `sudo systemctl status mysql` - Server is operational
+- Ran `sudo mysql_secure_installation` to secure the installation
+- Logged into MySQL: `sudo mysql`
+- Created database: `CREATE DATABASE isealab;`
+- Created table: `CREATE TABLE students (id, name, course)`
+- Inserted record: `INSERT INTO students VALUES ('Lam', 'BRG-ISEA')`
+- Queried data: `SELECT * FROM students` - returned 1 row successfully
+- MySQL version: 8.0.45
