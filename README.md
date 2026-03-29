@@ -75,3 +75,18 @@ Murdoch ID: 35614306
 - Created 3-year cumulative cost projection
 - Analysed break-even point and cost per page
 - Tool used: Microsoft Excel
+## Lab 2b - Cloud Computing (Microsoft Azure)
+- Attempted AWS EC2 but encountered account restrictions on new account
+- Successfully deployed Ubuntu VM on Microsoft Azure for Students
+  - VM Name: ISEA-VM
+  - Region: Central India
+  - Size: Standard_B2ats_v2 (2 vCPUs, 1GB RAM) - US$8.69/month
+  - OS: Ubuntu Server 24.04 LTS
+- Connected via SSH from Mac terminal: `ssh isealab@20.244.8.195`
+- Updated OS packages: `sudo apt update && sudo apt upgrade -y`
+
+## Lab 2b - Bash Scripting
+- Created `myscript.sh` with echo, date, whoami, uptime commands
+- Created `loops.sh` with if statement and for loop
+- Made scripts executable with `chmod +x`
+- Ran scripts with `bash scriptname.sh`
