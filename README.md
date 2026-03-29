@@ -64,3 +64,14 @@ Murdoch ID: 35614306
 - Used `find . -type f -printf '%T+ %p\n' | sort -r | head` for recently modified files
 - Used `grep -r "the" . | wc -l` to count matches recursively
 - Used `grep -r "ISEA" /home/ltc/` to search file contents
+
+## Lab 2a - Total Cost of Ownership (TCO)
+- Compared TCO of two printers over 5 years:
+  - Printer A: HP DeskJet 2755e (Budget Inkjet)
+  - Printer B: Brother HL-L2350DW (Entry Laser)
+- Assumptions used: 750 pages/week, 40 hrs power/week, 5-year period, SGD $0.30/kWh
+- Calculated fixed costs (printer purchase) and variable costs (ink/toner, paper, electricity, maintenance)
+- Laser printer proved more cost-effective at high volume despite higher upfront cost
+- Created 3-year cumulative cost projection
+- Analysed break-even point and cost per page
+- Tool used: Microsoft Excel
