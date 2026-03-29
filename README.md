@@ -5,30 +5,62 @@ Student: Lam Thanh Chieu
 Kaplan ID: CT0382466
 Murdoch ID: 35614306
 
+---
+
 ## Lab 1a - Setting Up Linux
 - Installed Ubuntu 24.04.4 LTS on UTM (Apple Silicon Mac)
-- Successfully booted and logged in via terminal
+- Used ARM64 ISO for Apple Silicon compatibility
+- Configured VM with 4 CPUs, 8GB RAM, 60GB storage
+- Resolved ISO boot loop by detaching ISO and selecting "Boot from next volume"
+- Successfully booted and logged into Ubuntu Server
 
 ## Lab 1a - Basic Linux Commands
-Commands practised:
-- `pwd` - shows current directory (/home/ltc/ISEA)
-- `ls` - lists files in current directory
-- `cd /etc` - navigate to /etc (system config files)
-- `cd /var` - navigate to /var (logs and variable data)
-- `cd /home` - navigate to /home (user directories)
-- `mkdir mylab` - created a new directory
-- `touch mylab/text.txt` - created an empty file
-- `man ls` - viewed manual page for ls command
+- `pwd` - shows current directory
+- `ls`, `ls -la`, `ls -lah`, `ls -alt` - list files with various detail levels
+- `cd /etc`, `cd /var`, `cd /home`, `cd ~` - directory navigation
+- `mkdir mylab` - created new directory
+- `touch mylab/text.txt` - created empty file
+- `cp README.md README_backup.md` - copy a file
+- `mv README_backup.md README_copy.md` - rename/move a file
+- `cat README.md` - view file contents
+- `man ls` - view manual pages
+- `uname -a` - system/kernel information
+- `lsb_release -a` - Ubuntu version details
+- `hostnamectl` - hostname information
+- `ps -e` - list all running processes
+- `top` - live process monitor (press 1 for CPU cores, q to exit)
+- `ip a` - network interface and IP address
+- `whoami` / `sudo whoami` - current user vs root privileges
 
 ## Lab 1b - Linux Services
-- Discovered SSH was not installed, installed it with `sudo apt install openssh-server -y`
-- Started, stopped and checked status using `sudo systemctl start|stop|status ssh`
+- Installed Apache2 web server: `sudo apt install apache2 -y`
+- Installed nmap: `sudo apt install nmap -y`
+- Verified Apache running: `sudo systemctl status apache2`
+- Tested web server locally: `curl http://127.0.0.1`
+- Installed and managed SSH: `sudo apt install openssh-server -y`
+- Started, stopped and checked SSH: `sudo systemctl start|stop|status ssh`
+- Configured UFW firewall: enabled firewall, allowed ports 80 and 22
+- Scanned open ports with nmap: `nmap 127.0.0.1`
+- Downloaded 3 Gutenberg books using `wget`
+- Created tar archive: `tar cf books.tar books`
+- Compressed with bzip2: `bzip2 books.tar` → produced `books.tar.bz2`
 
 ## Lab 1b - Linux Permissions
-- Viewed permissions with `ls -l`
-- Changed permissions with `chmod 755 mylab/text.txt` (changed from rw-rw-r-- to rwxr-xr-x)
-- Changed ownership with `chown ltc:ltc mylab/text.txt`
+- Created users: alice, bob, mallory using `sudo adduser`
+- Created group: `sudo groupadd labgroup`
+- Added alice and bob to labgroup; mallory excluded
+- Created shared directory: `sudo mkdir /home/shared`
+- Created 10 files inside shared directory
+- Set ownership: `sudo chown -R alice:labgroup /home/shared`
+- Set permissions: `sudo chmod -R 750 /home/shared`
+  - alice (owner): read, write, execute
+  - bob (labgroup): read and execute only
+  - mallory (no group): permission denied
+- Verified by switching users with `su [user] -s /bin/bash`
 
 ## Lab 1b - Searching Filesystems
-- Used `find /home -name "text.txt"` to locate files by name
-- Used `grep -r "ISEA" /home/ltc/` to search file contents recursively
+- Used `find . -name "*.txt"` to locate files by extension
+- Used `find . -type f -size +100k` to find files over 100KB
+- Used `find . -type f -printf '%T+ %p\n' | sort -r | head` for recently modified files
+- Used `grep -r "the" . | wc -l` to count matches recursively
+- Used `grep -r "ISEA" /home/ltc/` to search file contents
