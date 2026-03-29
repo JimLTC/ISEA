@@ -108,3 +108,15 @@ Murdoch ID: 35614306
 - Verified lock icon in browser showing Let's Encrypt as issuer
 - Certificate valid from 29 March 2026 to 27 June 2026
 - Tested auto-renewal with `sudo certbot renew --dry-run` - all renewals succeeded
+
+## Lab 3b - Server Automation (Bash + Cron)
+- Created test directory structure in ~/Documents with 10 files across 2 folders
+- Wrote backup script `testscript` that:
+  - Copies ~/Documents to ~/backup/
+  - Creates timestamped zip file (e.g. 29_03_26.zip)
+  - Logs completion to ~/backup.log
+- Made script executable with `chmod +x`
+- Moved script to /usr/bin/testscript for system-wide access
+- Scheduled with cron: `0 * * * * isealab /usr/bin/testscript` (runs every hour)
+- Challenge 1: Added `@reboot /usr/bin/testscript` to run at boot
+- Challenge 2: Installed figlet and neofetch for system info display
