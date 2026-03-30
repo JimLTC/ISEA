@@ -118,6 +118,10 @@ Murdoch ID: 35614306
 - Created 3-year cumulative cost projection
 - Analysed break-even point and cost per page
 - Tool used: Microsoft Excel
+![TCO1](TCO1.png)
+![TCO2](TCO2.png)
+![TCO3](TCO3.png)
+![TCO4](TCO4.png)
 
 ## Lab 2b - Cloud Computing (Microsoft Azure)
 - Attempted AWS EC2 but encountered account restrictions on new account
