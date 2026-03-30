@@ -13,7 +13,7 @@ Murdoch ID: 35614306
 - Configured VM with 4 CPUs, 8GB RAM, 60GB storage
 - Resolved ISO boot loop by detaching ISO and selecting "Boot from next volume"
 - Successfully booted and logged into Ubuntu Server
-![Screenshot 1](001.png)
+![Screenshot 001](001.png)
 
 ## Lab 1a - Basic Linux Commands
 - `pwd` - shows current directory
@@ -32,11 +32,11 @@ Murdoch ID: 35614306
 - `top` - live process monitor (press 1 for CPU cores, q to exit)
 - `ip a` - network interface and IP address
 - `whoami` / `sudo whoami` - current user vs root privileges
-![Screenshot 2](1.png)
-![Screenshot 3](2.png)
-![Screenshot 4](3.png)
-![Screenshot 5](4.png)
-![Screenshot 6](5.png)
+![Screenshot 1](1.png)
+![Screenshot 2](2.png)
+![Screenshot 3](3.png)
+![Screenshot 4](4.png)
+![Screenshot 5](5.png)
 
 ## Lab 1b - Linux Services
 - Installed Apache2 web server: `sudo apt install apache2 -y`
@@ -50,34 +50,34 @@ Murdoch ID: 35614306
 - Downloaded 3 Gutenberg books using `wget`
 - Created tar archive: `tar cf books.tar books`
 - Compressed with bzip2: `bzip2 books.tar` → produced `books.tar.bz2`
-![Screenshot 6](5.png)
-![Screenshot 7](6.png)
-![Screenshot 8](7.png)
-![Screenshot 9](8.png)
-![Screenshot 10](9.png)
-![Screenshot 17](16.png)
-![Screenshot 18](17.png)
-![Screenshot 19](18.png)
-![Screenshot 20](19.png)
-![Screenshot 21](20.png)
-![Screenshot 22](21.png)
-![Screenshot 23](22.png)
-![Screenshot 24](23.png)
-![Screenshot 25](24.png)
-![Screenshot 26](25.png)
-![Screenshot 27](26.png)
-![Screenshot 28](27.png)
-![Screenshot 29](28.png)
-![Screenshot 30](29.png)
-![Screenshot 31](30.png)
-![Screenshot 32](31.png)
-![Screenshot 33](32.png)
-![Screenshot 34](33.png)
-![Screenshot 35](34.png)
-![Screenshot 36](35.png)
-![Screenshot 37](36.png)
-![Screenshot 40](39.png)
-![Screenshot 41](40.png)
+![Screenshot 6](6.png)
+![Screenshot 7](7.png)
+![Screenshot 8](8.png)
+![Screenshot 9](9.png)
+![Screenshot 10](10.png)
+![Screenshot 17](17.png)
+![Screenshot 18](18.png)
+![Screenshot 19](19.png)
+![Screenshot 20](20.png)
+![Screenshot 21](21.png)
+![Screenshot 22](22.png)
+![Screenshot 23](23.png)
+![Screenshot 24](24.png)
+![Screenshot 25](25.png)
+![Screenshot 26](26.png)
+![Screenshot 27](27.png)
+![Screenshot 28](28.png)
+![Screenshot 29](29.png)
+![Screenshot 30](30.png)
+![Screenshot 31](31.png)
+![Screenshot 32](32.png)
+![Screenshot 33](33.png)
+![Screenshot 34](34.png)
+![Screenshot 35](35.png)
+![Screenshot 36](36.png)
+![Screenshot 37](37.png)
+![Screenshot 40](40.png)
+![Screenshot 41](41.png)
 
 ## Lab 1b - Linux Permissions
 - Created users: alice, bob, mallory using `sudo adduser`
@@ -101,12 +101,12 @@ Murdoch ID: 35614306
 - Used `find . -type f -printf '%T+ %p\n' | sort -r | head` for recently modified files
 - Used `grep -r "the" . | wc -l` to count matches recursively
 - Used `grep -r "ISEA" /home/ltc/` to search file contents
-![Screenshot 11](10.png)
-![Screenshot 12](11.png)
-![Screenshot 13](12.png)
-![Screenshot 14](13.png)
-![Screenshot 15](14.png)
-![Screenshot 16](15.png)
+![Screenshot 11](11.png)
+![Screenshot 12](12.png)
+![Screenshot 13](13.png)
+![Screenshot 14](14.png)
+![Screenshot 15](15.png)
+![Screenshot 16](16.png)
 
 ## Lab 2a - Total Cost of Ownership (TCO)
 - Compared TCO of two printers over 5 years:
@@ -132,16 +132,16 @@ Murdoch ID: 35614306
   - OS: Ubuntu Server 24.04 LTS
 - Connected via SSH from Mac terminal: `ssh isealab@20.244.8.195`
 - Updated OS packages: `sudo apt update && sudo apt upgrade -y`
-![Screenshot 42](41.png)
-![Screenshot 43](42.png)
+![Screenshot 42](42.png)
+![Screenshot 43](43.png)
 
 ## Lab 2b - Bash Scripting
 - Created `myscript.sh` with echo, date, whoami, uptime commands
 - Created `loops.sh` with if statement and for loop
 - Made scripts executable with `chmod +x`
 - Ran scripts with `bash scriptname.sh`
-![Screenshot 44](43.png)
-![Screenshot 45](44.png)
+![Screenshot 44](44.png)
+![Screenshot 45](45.png)
 
 ## Lab 3a - DNS Configuration
 - Registered free subdomain: `isealab.mooo.com` via FreeDNS (freedns.afraid.org)
@@ -150,6 +150,11 @@ Murdoch ID: 35614306
 - Verified DNS propagation using `nslookup isealab.mooo.com` → confirmed IP 20.244.8.195
 - Installed Apache2 web server on Azure VM
 - Confirmed Apache welcome page loading at `http://isealab.mooo.com`
+![Screenshot 46](46.png)
+![Screenshot 47](47.png)
+![Screenshot 48](48.png)
+![Screenshot 49](49.png)
+![Screenshot 50](50.png)
 
 ## Lab 3a - SSL Certificate (Let's Encrypt)
 - Installed Certbot via snap on Azure VM
@@ -159,6 +164,9 @@ Murdoch ID: 35614306
 - Verified lock icon in browser showing Let's Encrypt as issuer
 - Certificate valid from 29 March 2026 to 27 June 2026
 - Tested auto-renewal with `sudo certbot renew --dry-run` - all renewals succeeded
+![Screenshot 51](51.png)
+![Screenshot 52](52.png)
+![Screenshot 53](53.png)
 
 ## Lab 3b - Server Automation (Bash + Cron)
 - Created test directory structure in ~/Documents with 10 files across 2 folders
