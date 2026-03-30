@@ -179,6 +179,12 @@ Murdoch ID: 35614306
 - Scheduled with cron: `0 * * * * isealab /usr/bin/testscript` (runs every hour)
 - Challenge 1: Added `@reboot /usr/bin/testscript` to run at boot
 - Challenge 2: Installed figlet and neofetch for system info display
+![Screenshot 54](54.png)
+![Screenshot 55](55.png)
+![Screenshot 56](56.png)
+![Screenshot 57](57.png)
+![Screenshot 58](58.png)
+![Screenshot 59](59.png)
 
 ## Lab 4a - Additional Server Service (MySQL)
 - Chose MySQL as the additional server service
