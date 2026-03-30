@@ -197,3 +197,5 @@ Murdoch ID: 35614306
 - Inserted record: `INSERT INTO students VALUES ('Lam', 'BRG-ISEA')`
 - Queried data: `SELECT * FROM students` - returned 1 row successfully
 - MySQL version: 8.0.45
+![Screenshot 60](60.png)
+![Screenshot 61](61.png)
