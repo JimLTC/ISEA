@@ -132,12 +132,16 @@ Murdoch ID: 35614306
   - OS: Ubuntu Server 24.04 LTS
 - Connected via SSH from Mac terminal: `ssh isealab@20.244.8.195`
 - Updated OS packages: `sudo apt update && sudo apt upgrade -y`
+![Screenshot 42](41.png)
+![Screenshot 43](42.png)
 
 ## Lab 2b - Bash Scripting
 - Created `myscript.sh` with echo, date, whoami, uptime commands
 - Created `loops.sh` with if statement and for loop
 - Made scripts executable with `chmod +x`
 - Ran scripts with `bash scriptname.sh`
+![Screenshot 44](43.png)
+![Screenshot 45](44.png)
 
 ## Lab 3a - DNS Configuration
 - Registered free subdomain: `isealab.mooo.com` via FreeDNS (freedns.afraid.org)
