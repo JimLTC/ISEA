@@ -13,6 +13,7 @@ Murdoch ID: 35614306
 - Configured VM with 4 CPUs, 8GB RAM, 60GB storage
 - Resolved ISO boot loop by detaching ISO and selecting "Boot from next volume"
 - Successfully booted and logged into Ubuntu Server
+![Screenshot 1](001.png)
 
 ## Lab 1a - Basic Linux Commands
 - `pwd` - shows current directory
@@ -31,6 +32,11 @@ Murdoch ID: 35614306
 - `top` - live process monitor (press 1 for CPU cores, q to exit)
 - `ip a` - network interface and IP address
 - `whoami` / `sudo whoami` - current user vs root privileges
+![Screenshot 2](1.png)
+![Screenshot 3](2.png)
+![Screenshot 4](3.png)
+![Screenshot 5](4.png)
+![Screenshot 6](5.png)
 
 ## Lab 1b - Linux Services
 - Installed Apache2 web server: `sudo apt install apache2 -y`
@@ -44,6 +50,7 @@ Murdoch ID: 35614306
 - Downloaded 3 Gutenberg books using `wget`
 - Created tar archive: `tar cf books.tar books`
 - Compressed with bzip2: `bzip2 books.tar` → produced `books.tar.bz2`
+
 
 ## Lab 1b - Linux Permissions
 - Created users: alice, bob, mallory using `sudo adduser`
