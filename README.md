@@ -50,7 +50,34 @@ Murdoch ID: 35614306
 - Downloaded 3 Gutenberg books using `wget`
 - Created tar archive: `tar cf books.tar books`
 - Compressed with bzip2: `bzip2 books.tar` → produced `books.tar.bz2`
-
+![Screenshot 6](5.png)
+![Screenshot 7](6.png)
+![Screenshot 8](7.png)
+![Screenshot 9](8.png)
+![Screenshot 10](9.png)
+![Screenshot 17](16.png)
+![Screenshot 18](17.png)
+![Screenshot 19](18.png)
+![Screenshot 20](19.png)
+![Screenshot 21](20.png)
+![Screenshot 22](21.png)
+![Screenshot 23](22.png)
+![Screenshot 24](23.png)
+![Screenshot 25](24.png)
+![Screenshot 26](25.png)
+![Screenshot 27](26.png)
+![Screenshot 28](27.png)
+![Screenshot 29](28.png)
+![Screenshot 30](29.png)
+![Screenshot 31](30.png)
+![Screenshot 32](31.png)
+![Screenshot 33](32.png)
+![Screenshot 34](33.png)
+![Screenshot 35](34.png)
+![Screenshot 36](35.png)
+![Screenshot 37](36.png)
+![Screenshot 40](39.png)
+![Screenshot 41](40.png)
 
 ## Lab 1b - Linux Permissions
 - Created users: alice, bob, mallory using `sudo adduser`
@@ -64,6 +91,9 @@ Murdoch ID: 35614306
   - bob (labgroup): read and execute only
   - mallory (no group): permission denied
 - Verified by switching users with `su [user] -s /bin/bash`
+![Screenshot 38](37.png)
+![Screenshot 39](38.png)
+![Screenshot 40](39.png)
 
 ## Lab 1b - Searching Filesystems
 - Used `find . -name "*.txt"` to locate files by extension
@@ -71,6 +101,12 @@ Murdoch ID: 35614306
 - Used `find . -type f -printf '%T+ %p\n' | sort -r | head` for recently modified files
 - Used `grep -r "the" . | wc -l` to count matches recursively
 - Used `grep -r "ISEA" /home/ltc/` to search file contents
+![Screenshot 11](10.png)
+![Screenshot 12](11.png)
+![Screenshot 13](12.png)
+![Screenshot 14](13.png)
+![Screenshot 15](14.png)
+![Screenshot 16](15.png)
 
 ## Lab 2a - Total Cost of Ownership (TCO)
 - Compared TCO of two printers over 5 years:
