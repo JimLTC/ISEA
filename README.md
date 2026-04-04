@@ -32,11 +32,11 @@ Murdoch ID: 35614306
 - `top` - live process monitor (press 1 for CPU cores, q to exit)
 - `ip a` - network interface and IP address
 - `whoami` / `sudo whoami` - current user vs root privileges
-![Screenshot 1](1.png)
-![Screenshot 2](2.png)
-![Screenshot 3](3.png)
-![Screenshot 4](4.png)
-![Screenshot 5](5.png)
+![Screenshot 1](Lab1/1.png)
+![Screenshot 2](Lab1/2.png)
+![Screenshot 3](Lab1/3.png)
+![Screenshot 4](Lab1/4.png)
+![Screenshot 5](Lab1/5.png)
 
 ## Lab 1b - Linux Services
 - Installed Apache2 web server: `sudo apt install apache2 -y`
@@ -50,34 +50,34 @@ Murdoch ID: 35614306
 - Downloaded 3 Gutenberg books using `wget`
 - Created tar archive: `tar cf books.tar books`
 - Compressed with bzip2: `bzip2 books.tar` → produced `books.tar.bz2`
-![Screenshot 6](6.png)
-![Screenshot 7](7.png)
-![Screenshot 8](8.png)
-![Screenshot 9](9.png)
-![Screenshot 10](10.png)
-![Screenshot 17](17.png)
-![Screenshot 18](18.png)
-![Screenshot 19](19.png)
-![Screenshot 20](20.png)
-![Screenshot 21](21.png)
-![Screenshot 22](22.png)
-![Screenshot 23](23.png)
-![Screenshot 24](24.png)
-![Screenshot 25](25.png)
-![Screenshot 26](26.png)
-![Screenshot 27](27.png)
-![Screenshot 28](28.png)
-![Screenshot 29](29.png)
-![Screenshot 30](30.png)
-![Screenshot 31](31.png)
-![Screenshot 32](32.png)
-![Screenshot 33](33.png)
-![Screenshot 34](34.png)
-![Screenshot 35](35.png)
-![Screenshot 36](36.png)
-![Screenshot 37](37.png)
-![Screenshot 40](40.png)
-![Screenshot 41](41.png)
+![Screenshot 6](Lab1/6.png)
+![Screenshot 7](Lab1/7.png)
+![Screenshot 8](Lab1/8.png)
+![Screenshot 9](Lab1/9.png)
+![Screenshot 10](Lab1/10.png)
+![Screenshot 17](Lab1/17.png)
+![Screenshot 18](Lab1/18.png)
+![Screenshot 19](Lab1/19.png)
+![Screenshot 20](Lab1/20.png)
+![Screenshot 21](Lab1/21.png)
+![Screenshot 22](Lab1/22.png)
+![Screenshot 23](Lab1/23.png)
+![Screenshot 24](Lab1/24.png)
+![Screenshot 25](Lab1/25.png)
+![Screenshot 26](Lab1/26.png)
+![Screenshot 27](Lab1/27.png)
+![Screenshot 28](Lab1/28.png)
+![Screenshot 29](Lab1/29.png)
+![Screenshot 30](Lab1/30.png)
+![Screenshot 31](Lab1/31.png)
+![Screenshot 32](Lab1/32.png)
+![Screenshot 33](Lab1/33.png)
+![Screenshot 34](Lab1/34.png)
+![Screenshot 35](Lab1/35.png)
+![Screenshot 36](Lab1/36.png)
+![Screenshot 37](Lab1/37.png)
+![Screenshot 40](Lab1/40.png)
+![Screenshot 41](Lab1/41.png)
 
 ## Lab 1b - Linux Permissions
 - Created users: alice, bob, mallory using `sudo adduser`
@@ -91,9 +91,9 @@ Murdoch ID: 35614306
   - bob (labgroup): read and execute only
   - mallory (no group): permission denied
 - Verified by switching users with `su [user] -s /bin/bash`
-![Screenshot 38](37.png)
-![Screenshot 39](38.png)
-![Screenshot 40](39.png)
+![Screenshot 38](Lab1/37.png)
+![Screenshot 39](Lab1/38.png)
+![Screenshot 40](Lab1/39.png)
 
 ## Lab 1b - Searching Filesystems
 - Used `find . -name "*.txt"` to locate files by extension
@@ -101,12 +101,12 @@ Murdoch ID: 35614306
 - Used `find . -type f -printf '%T+ %p\n' | sort -r | head` for recently modified files
 - Used `grep -r "the" . | wc -l` to count matches recursively
 - Used `grep -r "ISEA" /home/ltc/` to search file contents
-![Screenshot 11](11.png)
-![Screenshot 12](12.png)
-![Screenshot 13](13.png)
-![Screenshot 14](14.png)
-![Screenshot 15](15.png)
-![Screenshot 16](16.png)
+![Screenshot 11](Lab1/11.png)
+![Screenshot 12](Lab1/12.png)
+![Screenshot 13](Lab1/13.png)
+![Screenshot 14](Lab1/14.png)
+![Screenshot 15](Lab1/15.png)
+![Screenshot 16](Lab1/16.png)
 
 ## Lab 2a - Total Cost of Ownership (TCO)
 - Compared TCO of two printers over 5 years:
@@ -118,10 +118,10 @@ Murdoch ID: 35614306
 - Created 3-year cumulative cost projection
 - Analysed break-even point and cost per page
 - Tool used: Microsoft Excel
-![TCO1](TCO1.png)
-![TCO2](TCO2.png)
-![TCO3](TCO3.png)
-![TCO4](TCO4.png)
+![TCO1](Lab2/TCO1.png)
+![TCO2](Lab2/TCO2.png)
+![TCO3](Lab2/TCO3.png)
+![TCO4](Lab2/TCO4.png)
 
 ## Lab 2b - Cloud Computing (Microsoft Azure)
 - Attempted AWS EC2 but encountered account restrictions on new account
@@ -132,16 +132,16 @@ Murdoch ID: 35614306
   - OS: Ubuntu Server 24.04 LTS
 - Connected via SSH from Mac terminal: `ssh isealab@20.244.8.195`
 - Updated OS packages: `sudo apt update && sudo apt upgrade -y`
-![Screenshot 42](42.png)
-![Screenshot 43](43.png)
+![Screenshot 42](Lab2/42.png)
+![Screenshot 43](Lab2/43.png)
 
 ## Lab 2b - Bash Scripting
 - Created `myscript.sh` with echo, date, whoami, uptime commands
 - Created `loops.sh` with if statement and for loop
 - Made scripts executable with `chmod +x`
 - Ran scripts with `bash scriptname.sh`
-![Screenshot 44](44.png)
-![Screenshot 45](45.png)
+![Screenshot 44](Lab2/44.png)
+![Screenshot 45](Lab2/45.png)
 
 ## Lab 3a - DNS Configuration
 - Registered free subdomain: `isealab.mooo.com` via FreeDNS (freedns.afraid.org)
@@ -150,11 +150,11 @@ Murdoch ID: 35614306
 - Verified DNS propagation using `nslookup isealab.mooo.com` → confirmed IP 20.244.8.195
 - Installed Apache2 web server on Azure VM
 - Confirmed Apache welcome page loading at `http://isealab.mooo.com`
-![Screenshot 46](46.png)
-![Screenshot 47](47.png)
-![Screenshot 48](48.png)
-![Screenshot 49](49.png)
-![Screenshot 50](50.png)
+![Screenshot 46](Lab3/46.png)
+![Screenshot 47](Lab3/47.png)
+![Screenshot 48](Lab3/48.png)
+![Screenshot 49](Lab3/49.png)
+![Screenshot 50](Lab3/50.png)
 
 ## Lab 3a - SSL Certificate (Let's Encrypt)
 - Installed Certbot via snap on Azure VM
@@ -164,9 +164,9 @@ Murdoch ID: 35614306
 - Verified lock icon in browser showing Let's Encrypt as issuer
 - Certificate valid from 29 March 2026 to 27 June 2026
 - Tested auto-renewal with `sudo certbot renew --dry-run` - all renewals succeeded
-![Screenshot 51](51.png)
-![Screenshot 52](52.png)
-![Screenshot 53](53.png)
+![Screenshot 51](Lab3/51.png)
+![Screenshot 52](Lab3/52.png)
+![Screenshot 53](Lab3/53.png)
 
 ## Lab 3b - Server Automation (Bash + Cron)
 - Created test directory structure in ~/Documents with 10 files across 2 folders
@@ -179,12 +179,12 @@ Murdoch ID: 35614306
 - Scheduled with cron: `0 * * * * isealab /usr/bin/testscript` (runs every hour)
 - Challenge 1: Added `@reboot /usr/bin/testscript` to run at boot
 - Challenge 2: Installed figlet and neofetch for system info display
-![Screenshot 54](54.png)
-![Screenshot 55](55.png)
-![Screenshot 56](56.png)
-![Screenshot 57](57.png)
-![Screenshot 58](58.png)
-![Screenshot 59](59.png)
+![Screenshot 54](Lab3/54.png)
+![Screenshot 55](Lab3/55.png)
+![Screenshot 56](Lab3/56.png)
+![Screenshot 57](Lab3/57.png)
+![Screenshot 58](Lab3/58.png)
+![Screenshot 59](Lab3/59.png)
 
 ## Lab 4a - Additional Server Service (MySQL)
 - Chose MySQL as the additional server service
@@ -197,5 +197,6 @@ Murdoch ID: 35614306
 - Inserted record: `INSERT INTO students VALUES ('Lam', 'BRG-ISEA')`
 - Queried data: `SELECT * FROM students` - returned 1 row successfully
 - MySQL version: 8.0.45
-![Screenshot 60](60.png)
-![Screenshot 61](61.png)
+![Screenshot 60](Lab4/60.png)
+![Screenshot 61](Lab4/61.png)
+![Screenshot 62](Lab4/62.png)
