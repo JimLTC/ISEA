@@ -13,7 +13,7 @@ Murdoch ID: 35614306
 - Configured VM with 4 CPUs, 8GB RAM, 60GB storage
 - Resolved ISO boot loop by detaching ISO and selecting "Boot from next volume"
 - Successfully booted and logged into Ubuntu Server
-![Screenshot 001](001.png)
+![Screenshot 001](lab1/001.png)
 
 ## Lab 1a - Basic Linux Commands
 - `pwd` - shows current directory
